@@ -55,7 +55,9 @@ nav ul li a:hover {
 .search {
   border: none;
 }
-
+button:hover {
+  background-color: #4caf50;
+}
 button {
   background-color: blue;
   color: white;
