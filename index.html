@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Recommendations - Home</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <div class="logo-container">
         <img class="logo" src="./images/logo.png" alt="" />
-        <h2>TravelBloom</h2>
+        <h5>AirWays</h5>
       </div>
       <nav>
         <ul>
@@ -20,23 +20,35 @@
         </ul>
       </nav>
       <div class="search-container">
-        <input class="search" type="text" placeholder="Search" />
-        <button id="search">Search</button>
-        <button id="clear" onclick="clearValue()">Clear</button>
+        <input
+          id="searchInput"
+          type="text"
+          placeholder="Type country, beach or temple"
+        />
+        <button id="searchBtn">Search</button>
+        <button id="clearBtn">Clear</button>
       </div>
     </header>
     <main>
       <section id="intro">
-        <h1>Explore Dream Destination</h1>
+        <h1>
+          Explore <br />
+          Dream <br />Destination
+        </h1>
         <p>
-          Your guide to discovering the best travel destinations based on your
-          interests.
+          It encourages exploration of unfamiliar <br />
+          teritories, embaracing diverse cultures and <br />
+          landscapes while pursueing the desired <br />
+          destination that captivate the heart and <br />
+          ignites a sense of wonders.
         </p>
+        <button id="book">Book Now</button>
       </section>
+      <section class="hide" id="destination"></section>
     </main>
     <footer>
       <p>&copy; 2024 Travel Recommendations. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script defer src="script.js"></script>
   </body>
 </html>
